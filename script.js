@@ -4,7 +4,6 @@ const header = document.querySelector('header');
 const open = document.querySelector('#open');
 const close = document.querySelector('#close');
 const span = document.querySelectorAll('header span');
-const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 let clicked = false;
 
 for (let i = 0; i < links.length; i++) {
@@ -40,22 +39,18 @@ for (let i = 0; i < links.length; i++) {
 open.onclick = () => {
   clicked = true;
   header.classList.add('clicked');
-  if (width < 1024) {
+  
     setTimeout(() => {
       for (let i = 0; i < span.length; i++) {
         span[i].style.display = 'inline';
       }
     }, 80);
-    
-  }
 };
 close.onclick = () => {
   clicked = false;
-  if (width < 1024) {
       for (let i = 0; i < span.length; i++) {
         span[i].style.display = 'none';
       }
-  }
   header.classList.remove('clicked');
 }
 
