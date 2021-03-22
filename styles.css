@@ -27,7 +27,7 @@ header > svg {
   margin: 41px 78px 60px 41px;
   width: 121px;
   height: 50px;
-  background: url("/icons/logo.png");
+  background: url("icons/logo.png");
 }
 
 a {
@@ -123,7 +123,7 @@ label::before {
   bottom: 19px;
   width: 20px;
   height: 20px;
-  background: url("/icons/search.svg");
+  background: url("icons/search.svg");
   z-index: 1;
 }
 
@@ -265,7 +265,7 @@ label::before {
   header.clicked .logo {
     width: 67px;
     height: 24px;
-    background-image: url("/icons/logo small.png");
+    background-image: url("icons/logo small.png");
   }
 
   .main {
